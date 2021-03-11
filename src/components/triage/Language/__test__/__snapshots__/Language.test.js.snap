@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Language renders correctly 1`] = `
+<div
+  className="sc-bdfBwQ iqcZPh"
+>
+  <button
+    className="sc-gsTCUz bdboKt"
+    onClick={[Function]}
+    selected={false}
+  />
+  <button
+    className="sc-gsTCUz bdboKt"
+    onClick={[Function]}
+    selected={false}
+  />
+  <button
+    className="sc-gsTCUz bdboKt"
+    onClick={[Function]}
+    selected={false}
+  />
+</div>
+`;
