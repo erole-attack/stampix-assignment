@@ -45,13 +45,13 @@ export default function GoToClient() {
 
    return (
       <Container>
-         <Section>
-            <ReactMarkdown>{triageText.consumer.subtitle[checkLanguage()]}</ReactMarkdown>
-            <ReactMarkdown>{triageText.consumer.title[checkLanguage()]}</ReactMarkdown>
-            <Button text={triageText.consumer.button_text[checkLanguage()]}to='https://stampix.com'/>
-         </Section>
+            <Section>
+               <ReactMarkdown>{triageText.consumer.subtitle[checkLanguage()]}</ReactMarkdown>
+               <ReactMarkdown>{triageText.consumer.title[checkLanguage()]}</ReactMarkdown>
+               <Button text={triageText.consumer.button_text[checkLanguage()]}to='https://stampix.com'/>
+            </Section>
          <StaticImage 
-            src='../../images/iphone XR.png' 
+            src='../../images/iphone_XR.png' 
             alt='iphone XR' 
             placeholder='blurred'
             style={{

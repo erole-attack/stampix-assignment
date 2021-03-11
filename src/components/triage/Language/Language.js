@@ -36,8 +36,8 @@ const LanguageButton = (props) => {
   const [language] = useContext(LanguageContext);
 
   return(
-    <LanguageButtonWrapper selected={language === props.option ? true : false} onClick={() => props.onClick()}>
-      {props.option}
+    <LanguageButtonWrapper selected={language === props.value ? true : false} onClick={() => props.onClick()}>
+      {props.value}
     </LanguageButtonWrapper>
   )
 }
@@ -65,14 +65,10 @@ const LanguageSwapper = (props) => {
 
 export default function Language() {
 
-  const [language, setLanguage] = useState('EN');
-
    return (
-      <LanguageContext.Provider value={[language, setLanguage]}>
         <Selector>
             <LanguageSwapper options={['NL', 'FR', 'EN']}/>
         </Selector>
-      </LanguageContext.Provider>
    )
  }
 

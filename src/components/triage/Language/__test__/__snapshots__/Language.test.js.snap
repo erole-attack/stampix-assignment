@@ -8,16 +8,22 @@ exports[`Language renders correctly 1`] = `
     className="sc-gsTCUz bdboKt"
     onClick={[Function]}
     selected={false}
-  />
+  >
+    NL
+  </button>
   <button
     className="sc-gsTCUz bdboKt"
     onClick={[Function]}
     selected={false}
-  />
+  >
+    FR
+  </button>
   <button
-    className="sc-gsTCUz bdboKt"
+    className="sc-gsTCUz nwHCe"
     onClick={[Function]}
-    selected={false}
-  />
+    selected={true}
+  >
+    EN
+  </button>
 </div>
 `;

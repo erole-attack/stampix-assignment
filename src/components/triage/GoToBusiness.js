@@ -61,13 +61,11 @@ export default function GoToBusiness() {
 
    return (
       <Container>
-
-         <Section>
-            <ReactMarkdown>{triageText.business.subtitle[checkLanguage()]}</ReactMarkdown>
-            <ReactMarkdown>{triageText.business.title[checkLanguage()]}</ReactMarkdown>
-            <Button text={triageText.business.button_text[checkLanguage()]} to='https://business.stampix.com'/>
-         </Section>
-
+            <Section>
+               <ReactMarkdown>{triageText.business.subtitle[checkLanguage()]}</ReactMarkdown>
+               <ReactMarkdown>{triageText.business.title[checkLanguage()]}</ReactMarkdown>
+               <Button text={triageText.business.button_text[checkLanguage()]} to='https://business.stampix.com'/>
+            </Section>
          <ImageContainer>
             <StaticImage 
                src='../../images/orange_logo.png' 

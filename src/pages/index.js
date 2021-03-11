@@ -1,8 +1,8 @@
-import React, { useState } from 'react'
-
 import Background from '../components/triage/Background'
 import GlobalStyle from '../styles/GlobalSyle'
 import Language from '../components/triage/Language/Language'
+import { LanguageContextProvider } from '../context/context'
+import React from 'react'
 import { StaticImage } from 'gatsby-plugin-image'
 import UserRedirect from '../components/triage/UserRedirect'
 import { device } from '../styles/device'
@@ -23,18 +23,20 @@ const Container = styled.div`
 export default function App() {
 
   return (
-    <Background>
-        <Container>
-          <StaticImage 
-            src='../images/stampix_logo.png' 
-            alt='stampix'
-            placeholder='blurred'
-            width={1000}
-          />
-          <Language/>
-        </Container>
-        <UserRedirect/>
-        <GlobalStyle/>
-    </Background>
+    <LanguageContextProvider>
+      <Background>
+          <Container>
+            <StaticImage 
+              src='../images/stampix_logo.png' 
+              alt='stampix'
+              placeholder='blurred'
+              width={1000}
+            />
+            <Language/>
+          </Container>
+          <UserRedirect/>
+          <GlobalStyle/>
+      </Background>
+    </LanguageContextProvider>
   )
 }
