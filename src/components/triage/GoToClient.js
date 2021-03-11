@@ -51,7 +51,7 @@ export default function GoToClient() {
                <Button text={triageText.consumer.button_text[checkLanguage()]}to='https://stampix.com'/>
             </Section>
          <StaticImage 
-            src='../../images/iphone_XR.png' 
+            src='../../images/iphone.png' 
             alt='iphone XR' 
             placeholder='blurred'
             style={{
